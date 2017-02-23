@@ -151,7 +151,7 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
+  color: gray;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -397,4 +397,29 @@ img::-moz-selection {
 }
 body {
   -webkit-tap-highlight-color: #0085A1;
+}
+#QA{
+  font: normal normal 16px/1 Arial;
+  position:relative;
+  margin:0 auto;
+  border-radius:10px;
+  background:#eee;
+  text-align:center;
+  width:300px;
+  padding:20px;
+}
+#QA h2{
+  font-weight:200;
+  color:#004E97;
+}
+#QA button{
+  background:#008BBE;
+  border:0;
+  border-radius:5px;
+  padding:10px;
+  cursor:pointer;
+  color:#fff;
+}
+#aDIV, #score, #response{
+  display:none;
 }
