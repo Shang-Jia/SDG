@@ -19,8 +19,20 @@ body {
 
 #question-box{
     margin-top: 100px;
+    opacity: 0.75;
 }
 
 #map-random{
     margin-top: 100px;
+}
+
+#logo{
+    width: 60px;
+}
+
+.info-box{
+    color: white;
+    background-color: gray;
+    opacity: 0.75;
+    text-decoration: white;
 }
