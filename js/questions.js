@@ -49,4 +49,5 @@ function showNext(){
     var next = document.getElementById("next");
     next.outerHTML = nextButton;
 }
+
 ask();

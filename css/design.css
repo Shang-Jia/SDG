@@ -1,0 +1,18 @@
+body {
+    background-image: url("../img/protest.png");
+}
+
+#map-button{
+    width: 250px;
+    padding-bottom: 15px;
+}
+
+#random-button{
+    width: 250px;
+    height: 133px;
+    margin-left: 30px;
+}
+
+#options{
+    margin-top: 100px;
+}
