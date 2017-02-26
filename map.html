@@ -30,13 +30,12 @@
     <![endif]-->
 
 </head>
-<img class="img-responsive" src="img/map.png" alt="" usemap="#map1488064045164">
-<map id="map1488064045164" name="map1488064045164"><area shape="rect" coords="139,251,352,330" title="usa" alt="usa" href="usa" target="_self"><area shape="rect" coords="207,125,344,180" title="canada" alt="canada" href="canada" target="_self"><area shape="rect" coords="1918,980,1919,981" alt="Image HTML map generator" title="HTML Map creator" href="http://www.html-map.com/" target="_self"></map>
-<div style="position:relative; height:982px; width:1920px; background:url(https://preview.c9users.io/justcode247/btc/img/map.png) 0 0 no-repeat;">
-    <a style="position:absolute; top:251px; left:139px; width:213px; height:79px;" title="usa" alt="usa" href="usa" target="_self"></a>
-    <a style="position:absolute; top:125px; left:207px; width:137px; height:55px;" title="canada" alt="canada" href="canada" target="_self"></a>
-    <a style="position:absolute; overflow:hidden; top:980px; left:1918px; width:1px; height:1px;" title="HTML Map creator" alt="Image HTML map generator" href="http://www.html-map.com/" target="_self"></a>
-</div>
+<img src="img/map.png" alt="" usemap="#map1488064045164"" />
+<map id="map1488064045164" name="map1488064045164">
+    <area alt="CANADA" title="CANADA" href="CANADA" shape="poly" coords="198,87,135,158,144,224,440,275,524,240,566,186,534,146,554,92,551,65,485,63,498,59,368,57,321,51" />
+    <area alt="USA" title="USA" href="USA" shape="poly" coords="194,89,122,74,69,81,57,98,15,132,6,149,18,161,123,158,138,219" />
+    <area alt="USA" title="USA" href="USA" shape="poly" coords="137,225,425,282,351,345,351,374,347,396,296,369,245,372,137,354,125,351,99,332,95,287" />
+</map>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -53,7 +52,11 @@
  
     <script src="js/stereotypes.js"></script>
     <script src="js/questions.js"></script>
-    
+    	<script type="text/javascript">
+
+		$('map').imageMapResize();
+
+	</script>
     
 
 </body>
