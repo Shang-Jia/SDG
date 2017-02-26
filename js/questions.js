@@ -3,24 +3,28 @@ var random = undefined;
 var rightstring = 'Yes you are right!';
 var wrongstring = "Sorry, that is actually not true";
 var nextButton = '<button type="button" id="next" class="btn btn-primary btn-lg btn-block" onclick="ask()">Next</button>'
+var current_question = 0
 
-
-// function init(){
-//     random = Math.floor((Math.random() * st.length));
-//     document.getElementById("question").innerHTML = st[random]['q'];
-// }
+function init(){
+    document.getElementById("question").innerHTML = st[current_question]['q'];
+}
 
 
 function ask(){
-    console.log('asked')
+    current_question = current_question + 1
     var rr = document.getElementById("right-wrong");
-    var next = document.getElementById("next")
-    var details  = document.getElementById("details") 
-    rr.innerHTML = ''
-    next.outerHTML = '<div id="next"></div>'
-    details.innerHTML = ''
-    random = Math.floor((Math.random() * st.length));
-    document.getElementById("question").innerHTML = st[random]['q'];
+    var next = document.getElementById("next");
+    var details  = document.getElementById("details") ;
+    rr.innerHTML = '';
+    next.outerHTML = '<div id="next"></div>';
+    details.innerHTML = '';
+    //random = Math.floor((Math.random() * st.length));
+    if (current_question >= st.length){
+        current_question = 0
+    }
+    console.log(current_question) // logs curretn quesion number
+    document.getElementById("question").innerHTML = st[current_question]['q'];
+    
 }
 
 // on clicking true
@@ -37,17 +41,17 @@ function onfalse(){
 }
 // checks answers after clicking
 function checkAnswer(){
-    if (current_response == st[random]['correct']) {
+    if (current_response == st[current_question]['correct']) {
         document.getElementById("right-wrong").innerHTML = rightstring;
     } else { 
         document.getElementById("right-wrong").innerHTML = wrongstring;
     }
-    document.getElementById("details").innerHTML = st[random]['a'];
+    document.getElementById("details").innerHTML = st[current_question]['a'];
 }
 
 function showNext(){
     var next = document.getElementById("next");
-    next.outerHTML = nextButton;
+    next.outerHTML = nextButton; // makes button for next in html
 }
 
-ask();
+init();
