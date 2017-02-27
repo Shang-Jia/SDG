@@ -38,3 +38,9 @@ body {
     opacity: 0.75;
     text-decoration: white;
 }
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
