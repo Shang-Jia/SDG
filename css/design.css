@@ -1,5 +1,6 @@
 body {
-    background-image: url("../img/protest.png");
+    background: url("../img/protest.png") #000 no-repeat;
+    background-size: 100%;
 }
 
 #map-button{
@@ -27,6 +28,7 @@ body {
 }
 
 #logo{
+    cursor: pointer;
     width: 60px;
 }
 
