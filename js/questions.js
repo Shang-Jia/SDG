@@ -2,7 +2,8 @@ var current_response = undefined;
 var random = undefined;
 var rightstring = 'Yes you are right!';
 var wrongstring = "Sorry, that is actually not true";
-var nextButton = '<button type="button" id="next" class="btn btn-primary btn-lg btn-block" onclick="ask()">Next</button>'
+var nextButton = '<button type="button" id="next" class="btn btn-primary btn-lg btn-block" onclick="onnext()">Next</button>'
+var prevButton = '<button type="button" id="prev" class="btn btn-primary btn-lg btn-block" onclick="onprev()">Prev</button>'
 var current_question = 0
 
 function init(){
@@ -11,12 +12,13 @@ function init(){
 
 
 function ask(){
-    current_question = current_question + 1
     var rr = document.getElementById("right-wrong");
     var next = document.getElementById("next");
+    var prev = document.getElementById("prev");
     var details  = document.getElementById("details") ;
     rr.innerHTML = '';
     next.outerHTML = '<div id="next"></div>';
+    prev.outerHTML = '<div id="prev"></div>';
     details.innerHTML = '';
     //random = Math.floor((Math.random() * st.length));
     if (current_question >= st.length){
@@ -24,7 +26,6 @@ function ask(){
     }
     console.log(current_question) // logs curretn quesion number
     document.getElementById("question").innerHTML = st[current_question]['q'];
-    
 }
 
 // on clicking true
@@ -39,6 +40,16 @@ function onfalse(){
     checkAnswer()
     showNext()
 }
+
+function onprev(){
+    current_question = current_question - 1
+    ask()
+}
+
+function onnext(){
+    current_question = current_question + 1
+    ask()
+}
 // checks answers after clicking
 function checkAnswer(){
     if (current_response == st[current_question]['correct']) {
@@ -51,7 +62,9 @@ function checkAnswer(){
 
 function showNext(){
     var next = document.getElementById("next");
+    var prev = document.getElementById("prev");
     next.outerHTML = nextButton; // makes button for next in html
+    prev.outerHTML = prevButton;
 }
 
 init();
