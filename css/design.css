@@ -28,6 +28,7 @@ body {
 }
 
 #logo{
+    cursor: pointer;
     width: 60px;
 }
 
