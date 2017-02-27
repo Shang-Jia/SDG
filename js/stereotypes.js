@@ -54,4 +54,44 @@ var st = [
         "a":  "Focusing on them being “unable” to hold down jobs other than the minimum wage ones. Not true. Why is it not true. This issue focuses on the often believed stereotype that Hispanics cannot hold down high paying jobs and are therefore “stuck” with jobs that are “more suited” to their abilities. The people of the Hispanic community are known to be extraordinary entrepreneurs and are targeted as the future of the business world.",
         "correct": 0
     },
+    { // Kayla Begins
+      "q": "Black people commit the most amount of overall crime in the U.S.",
+      "a": "According to the statistics, white people commit more overall crime than black people in the U.S. White people commit 68.9% of total crimes, while black people commit 28.3%. This suggests that the stereotype, “black people are violent and commit a significant amount of crime”, is not true.",
+      "correct": 0
+    },
+    {
+      "q": "Black people in Canada are less likely to be unemployed than the rest of the population.",
+      "a": "People in the African community in Canada are slightly less likely to be employed than the rest of the population. In 2001, 60% of all African people aged 15 and over were employed, compared with 62% of those in this age range in the overall Canadian population.",
+      "correct": 1
+    },
+    {
+      "q": "Black people in Canada are significantly less likely than the rest of the population to be university graduates.",
+      "a": "Black people in Canada are more likely than the rest of the population to be university graduates. Those in the African community in Canada are somewhat more likely than the rest of the population to be university graduates. In 2001, 19% of African people aged 15 and over were university graduates, compared with 15% of those in the overall adult population.",
+      "correct": 0
+    },
+    {
+      "q": "Black people in the U.S. are usually unemployed due to the fact that they are uneducated or unqualified.",
+      "a": "Black people in the U.S. are usually unemployed due to prejudices against them by employers. In one study, employers were far more likely to view African American workers in a negative light, describing them as ‘having an attitude’, i.e. the ‘wrong’ attitude towards work.",
+      "correct": 0
+    },
+    {
+      "q": "Black people in the U.S. commit crime due to unemployment, economic deprivation, and family disruption.",
+      "a": "One study states that black violence is linked to unemployment, economic deprivation and family disruption but not to Black culture. Another study examined reciprocal effects between violent crime and racial composition and concluded that the association between them is due, in part, to the strong effect of violent crime on racial composition.",
+      "correct": 1
+    },
+    {
+      "q": "Black people commit 68.9% of crime in the U.S., whereas white people only commit 28.3% of crime in the U.S.",
+      "a": "It is the opposite, white people commit 68.9% of crime in the U.S., whereas black people only commit 28.3% of crime in the U.S.",
+      "correct": 0
+    },
+    {
+      "q": "Black people do not commit crime simply because 'it is part of their culture'",
+      "a": "Black violence is linked to unemployment, economic deprivation and family disruption, but not to Black culture.",
+      "correct": 1
+    },
+    {
+      "q": "Black people in the U.S. do not face any prejudices against them by employers. ",
+      "a": "Black people in the U.S. face a lot of prejudice against them by employers. The data from Los Angeles document that employers systematically differentiate between African American and Latino immigrant candidates on the basis of race, nativity and gender.",
+      "correct": 0
+    }
     ];
