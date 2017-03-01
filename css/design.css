@@ -1,6 +1,10 @@
-body {
+.body{
     background: url("../img/protest.png") #000 no-repeat;
     background-size: 100%;
+}
+
+body {
+    background-color: #000
 }
 
 #map-button{
@@ -32,7 +36,12 @@ body {
     width: 60px;
 }
 
+#map{
+    margin-top: 100px;
+}
+
 .info-box{
+    margin-top: 100px;
     color: white;
     background-color: gray;
     opacity: 0.75;
